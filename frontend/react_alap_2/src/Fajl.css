@@ -1,0 +1,45 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f5f3f3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: rgb(14, 13, 13);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #f7f3f3;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+.kerdes {
+    background-color: gray;
+}
+
+.valasz { background-color: aliceblue;}
+.gombok{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+@media only screen and (max-width: 600px) {
+    .gombok{
+       
+        grid-template-columns: 1fr ;
+        grid-gap: 5px;
+    }
+  }
